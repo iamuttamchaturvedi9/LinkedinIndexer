@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saved Item Search</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <span class="mark">◆</span>
+      <h1>Saved&nbsp;Index</h1>
+    </div>
+    <p class="tagline">Your LinkedIn saves, actually searchable.</p>
+  </header>
+
+  <div class="search-row">
+    <input id="search" type="text" placeholder="Search titles, people, keywords…" autofocus />
+  </div>
+
+  <div id="status" class="status"></div>
+
+  <ul id="results" class="results"></ul>
+
+  <div id="empty" class="empty" hidden>
+    <p><strong>No items indexed yet.</strong></p>
+    <p>Open your <a id="openSaved" href="#">LinkedIn saved items</a> page, then hit Sync below.</p>
+  </div>
+
+  <footer class="footer">
+    <button id="syncBtn">Sync from LinkedIn</button>
+    <span id="lastSync" class="last-sync"></span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
